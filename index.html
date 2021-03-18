@@ -1,6 +1,7 @@
 <head>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
 
   <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
@@ -26,34 +27,37 @@
 
 <body>
   <div class="centered">
+    <div>
+      <span>
+        <h1>Welcome! Here's a dog.</h1>
+      </span>
+      <p>
+        <img src="" alt="Woof woof" id="dog" width="60%">
+      </p>
+      <span>
+        Random dog provided by dog.ceo
+      </span>
+    </div>
     <p>
       <a href="https://www.facebook.com/jpmartin4" class="button">
-        <img src="/images/icons/facebook_icon.png" alt="Facebook" width="250" height="250">
+        <img src="/images/icons/facebook_icon.png" alt="Facebook" width="10%" height="10%">
       </a>
       <a href="https://www.linkedin.com/in/jpmartin4/" class="button">
-        <img src="/images/icons/linkedin_icon.png" alt="LinkedIn" width="250" height="250">
+        <img src="/images/icons/linkedin_icon.png" alt="LinkedIn" width="10%" height="10%">
       </a>
       <a href="https://www.etsy.com/shop/HooksAndNeedlesMA" class="button">
-        <img src="/images/icons/etsy_icon.png" alt="Etsy" width="250" height="250">
+        <img src="/images/icons/etsy_icon.png" alt="Etsy" width="10%" height="10%">
       </a>
-    </p>
-    <p>
       <a href="https://github.com/sgtCalamari" class="button">
-        <img src="/images/icons/github_icon.png" alt="GitHub" width="250" height="250">
+        <img src="/images/icons/github_icon.png" alt="GitHub" width="10%" height="10%">
       </a>
       <a href="https://www.instagram.com/jpmartin43" class="button">
-        <img src="/images/icons/instagram_icon.png" alt="Instagram" width="250" height="250">
+        <img src="/images/icons/instagram_icon.png" alt="Instagram" width="10%" height="10%">
       </a>
       <a href="mailto:throwstuff@joemart.in" class="button">
-        <img src="/images/icons/mail_icon.png" alt="Email" width="250" height="250">
+        <img src="/images/icons/mail_icon.png" alt="Email" width="10%" height="10%">
       </a>
     </p>
-    <p>
-      <img src="" alt="Woof woof" id="dog" width="75%">
-    </p>
-    <span>
-      Random dog provided by dog.ceo
-    </span>
   </div>
   <span id="helloWorld">
     <p>Hello, World!</p>
@@ -63,7 +67,7 @@
     fetch("https://dog.ceo/api/breeds/image/random", { method: 'get' })
       .then(function (response) {
         var dog = response.json();
-        dog.then(function(resJson) {
+        dog.then(function (resJson) {
           document.getElementById('dog').src = resJson.message;
         });
       }).catch(function (error) {
