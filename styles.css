@@ -1,0 +1,11 @@
+body {
+    background: linear-gradient(to bottom, #00ccff  0%, #ff9933  100%);
+}
+#helloWorld {
+    text-align: right; 
+    color: #E87409;
+	font-family: 'DotGothic16', sans-serif;
+}
+div.centered {
+    text-align: center;
+}
