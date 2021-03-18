@@ -58,21 +58,26 @@
       </a>
     </p>
     <p>
-      <img src="" alt="Woof woof" id="dog">
+      <img src="" alt="Woof woof" id="dog" width="75%">
     </p>
+    <span>
+      Random dog provided by dog.ceo
+    </span>
   </div>
   <span id="helloWorld">
     <p>Hello, World!</p>
   </span>
 
   <script type="text/javascript">
-    var req = new XMLHttpRequest();
-    req.open("GET", "https://dog.ceo/api/breeds/image/random");
-    req.send(null);
-    var httpResponse = req.responseText;
-    console.log(httpResponse);
-
-    var dogImg = JSON.parse(httpResponse)["message"];
-    document.getElementById("dog").src = dogImg;
+    fetch("https://dog.ceo/api/breeds/image/random", { method: 'get' })
+      .then(function (response) {
+        var dog = response.json();
+        dog.then(function(resJson) {
+          document.getElementById('dog').src = resJson.message;
+        });
+      }).catch(function (error) {
+        // Error :(
+        console.log(error);
+      });
   </script>
 </body>
