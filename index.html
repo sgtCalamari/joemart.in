@@ -66,15 +66,13 @@
   </span>
 
   <script type="text/javascript">
-    function GetDog() {
-      var httpRequest = new XMLHttpRequest();
-      httpRequest.open("GET", "https://dog.ceo/api/breeds/image/random");
-      httpRequest.send(null);
-      return httpRequest.responseText;
-    }
-    var httpResponse = GetDog();
+    var req = new XMLHttpRequest();
+    req.open("GET", "https://dog.ceo/api/breeds/image/random");
+    req.send(null);
+    var httpResponse = req.responseText;
     console.log(httpResponse);
-    var dogImg = JSON.parse(httpResponse);
+
+    var dogImg = JSON.parse(httpResponse)["message"];
     document.getElementById("dog").src = dogImg;
   </script>
 </body>
