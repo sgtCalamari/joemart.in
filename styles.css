@@ -22,3 +22,6 @@ a.button {
 img {
     padding: 0 5px 0 5px;
 }
+#dog {
+    border-radius: 20px;
+}
