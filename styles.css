@@ -1,7 +1,7 @@
 h1 {
     color: #E87409;
     font-family: Chango, Helvetica, sans-serif;
-    text-shadow: 2px 2px 5px red;
+    text-shadow: 2px 2px 5px black;
 }
 body {
     background: linear-gradient(to bottom, #00ccff  0%, #ff9933  100%);
