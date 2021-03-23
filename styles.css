@@ -13,13 +13,11 @@ a.button {
     text-decoration: none;
 }
 a.button > img {
-    display: table-column;
     width: 13%;
     padding: 0 1%;
 }
 #social {
     padding: 2em 0;
-    display: table;
     border-top: 5px solid #93E9BE;
     animation: color-border 10s infinite;
 }
