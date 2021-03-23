@@ -1,1 +1,9 @@
-<p>projects works!</p>
+<h2>Projects</h2>
+<ul class='projects'>
+  <li *ngFor="let project of projects"
+    (click)="onSelect(project)"
+    [class.selected]="project === selectedProject">
+    <span class="badge">{{project.id}}</span> {{project.name}}
+  </li>
+</ul>
+<app-project-detail [project]="selectedProject"></app-project-detail>
