@@ -11,10 +11,17 @@ div.centered {
 }
 a.button {
     text-decoration: none;
+}
+a.button > img {
+    display: table-column;
+    width: 13%;
     padding: 0 1%;
 }
-#social {
+#social > span {
     padding: 2em 0;
+    display: table;
+    border-top: 5px solid #93E9BE;
+    animation: color-border 10s infinite;
 }
 #contents {
     border-radius: 25px;
@@ -126,4 +133,47 @@ a.button {
     95%   {color: hsl(342, 65%, 40%);}
     98%   {color: hsl(351, 65%, 40%);}
     100%  {color: hsl(360, 65%, 40%);}
+}
+@keyframes color-border {
+    0%    {border-color: hsl(0, 65%, 40%);}
+    2%    {border-color: hsl(9, 65%, 40%);}
+    5%    {border-color: hsl(18, 65%, 40%);} 
+    7%    {border-color: hsl(27, 65%, 40%);} 
+    10%   {border-color: hsl(36, 65%, 40%);} 
+    12%   {border-color: hsl(45, 65%, 40%);} 
+    15%   {border-color: hsl(54, 65%, 40%);} 
+    17%   {border-color: hsl(63, 65%, 40%);} 
+    20%   {border-color: hsl(72, 65%, 40%);} 
+    22%   {border-color: hsl(81, 65%, 40%);} 
+    25%   {border-color: hsl(90, 65%, 40%);} 
+    27%   {border-color: hsl(99, 65%, 40%);} 
+    30%   {border-color: hsl(108, 65%, 40%);}
+    32%   {border-color: hsl(117, 65%, 40%);} 
+    35%   {border-color: hsl(126, 65%, 40%);} 
+    37%   {border-color: hsl(135, 65%, 40%);} 
+    40%   {border-color: hsl(144, 65%, 40%);} 
+    42%   {border-color: hsl(153, 65%, 40%);} 
+    45%   {border-color: hsl(162, 65%, 40%);} 
+    47%   {border-color: hsl(171, 65%, 40%);} 
+    50%   {border-color: hsl(180, 65%, 40%);} 
+    52%   {border-color: hsl(189, 65%, 40%);} 
+    55%   {border-color: hsl(198, 65%, 40%);} 
+    57%   {border-color: hsl(207, 65%, 40%);} 
+    60%   {border-color: hsl(216, 65%, 40%);} 
+    62%   {border-color: hsl(225, 65%, 40%);} 
+    65%   {border-color: hsl(234, 65%, 40%);} 
+    67%   {border-color: hsl(243, 65%, 40%);} 
+    70%   {border-color: hsl(252, 65%, 40%);} 
+    72%   {border-color: hsl(261, 65%, 40%);} 
+    75%   {border-color: hsl(270, 65%, 40%);} 
+    77%   {border-color: hsl(279, 65%, 40%);} 
+    80%   {border-color: hsl(288, 65%, 40%);} 
+    82%   {border-color: hsl(297, 65%, 40%);}
+    85%   {border-color: hsl(306, 65%, 40%);}
+    87%   {border-color: hsl(315, 65%, 40%);}
+    90%   {border-color: hsl(324, 65%, 40%);}
+    92%   {border-color: hsl(333, 65%, 40%);}
+    95%   {border-color: hsl(342, 65%, 40%);}
+    98%   {border-color: hsl(351, 65%, 40%);}
+    100%  {border-color: hsl(360, 65%, 40%);}
 }
