@@ -1,3 +1,7 @@
+@font-face {
+    font-family: TheSkinny;
+    src: url('./TheSkinny.otf') format('opentype');
+}
 body {
     animation: color-bg-animation 10s infinite;
 }
