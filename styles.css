@@ -26,7 +26,6 @@ a.button {
 }
 #dog {
     border-radius: 20px;
-    width: 92%;
 }
 #helloWorld {
     animation: color-animation 10s infinite;
