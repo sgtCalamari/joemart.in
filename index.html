@@ -26,14 +26,14 @@
 </head>
 
 <body>
-  <div class="centered">
+  <div id="contents" class="centered">
     <div>
-      <h1>Welcome! Here's a dog.</h1>
+      <h1 class="color">Welcome! Here's a dog.</h1>
       <p>
         <img src="" alt="Woof woof" id="dog" width="80%">
       </p>
     </div>
-    <p>
+    <div id="social">
       <a href="https://www.facebook.com/jpmartin4" class="button">
         <img src="/images/icons/facebook_icon.png" alt="Facebook" width="10%">
       </a>
@@ -52,17 +52,14 @@
       <a href="mailto:throwstuff@joemart.in" class="button">
         <img src="/images/icons/mail_icon.png" alt="Email" width="10%">
       </a>
-    </p>
+    </div>
   </div>
-  <span id="helloWorld">
-    <p>Hello, World!</p>
-  </span>
+  <p id="helloWorld">Hello, World!</p>
 
   <script type="text/javascript">
     fetch("https://dog.ceo/api/breeds/image/random", { method: 'get' })
       .then(function (response) {
-        var dog = response.json();
-        dog.then(function (resJson) {
+        response.json().then(function (resJson) {
           document.getElementById('dog').src = resJson.message;
         });
       }).catch(function (error) {
