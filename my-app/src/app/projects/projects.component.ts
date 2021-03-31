@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../project'
-import { PROJECTS } from '../mock-projects'
+import { Project } from '../project';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-projects',
@@ -13,16 +13,21 @@ export class ProjectsComponent implements OnInit {
     name: "Face Masks"
   };
 
-  projects = PROJECTS;
+  projects: Project[] = [];
 
   selectedProject: Project;
   onSelect(project: Project): void {
     this.selectedProject = project;
   }
 
-  constructor() { }
+  constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
+    this.getProjects();
+  }
+
+  getProjects(): void {
+    this.projects = this.projectService.getProjects();
   }
 
 }
