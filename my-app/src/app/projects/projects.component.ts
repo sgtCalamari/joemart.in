@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Project } from '../project';
 import { ProjectService } from '../project.service';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-projects',
@@ -13,21 +15,24 @@ export class ProjectsComponent implements OnInit {
     name: "Face Masks"
   };
 
+  selectedProject?: Project;
   projects: Project[] = [];
 
-  selectedProject: Project;
-  onSelect(project: Project): void {
-    this.selectedProject = project;
-  }
-
-  constructor(private projectService: ProjectService) { }
+  constructor(private projectService: ProjectService, private messageService:
+    MessageService) { }
 
   ngOnInit(): void {
     this.getProjects();
   }
 
+  onSelect(project: Project): void {
+    this.selectedProject = project;
+    this.messageService.add(`ProjectsComponent: Selected project id=${project.id}`);
+  }
+
   getProjects(): void {
-    this.projects = this.projectService.getProjects();
+    this.projectService.getProjects()
+      .subscribe(projects => this.projects = projects);
   }
 
 }
