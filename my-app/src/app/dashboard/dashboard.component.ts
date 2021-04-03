@@ -13,6 +13,7 @@ export class DashboardComponent implements OnInit {
   constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
+    this.getProjects();
   }
 
   getProjects(): void {
