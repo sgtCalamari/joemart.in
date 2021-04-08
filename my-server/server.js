@@ -4,7 +4,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = 4200;
+const port = 8080;
 const app_folder = 'dist/my-app'
 
 const db = require('./models');
