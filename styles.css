@@ -27,10 +27,14 @@ a.button > img {
 }
 #contents {
     border-radius: 25px;
-    background: linear-gradient(to bottom, #93E9BE  0%, #E89C92  100%);;
     width: 90%;
     margin-left: 5%;
     box-shadow: 5px 5px 25px black;
+}
+.card {
+	background: rgba(255, 255, 255, .7);
+	-webkit-backgroup-filter: blur(10px);
+	backgrop-filter: blur(10px);
 }
 #dog {
     border-radius: 20px;
