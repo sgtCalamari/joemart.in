@@ -22,8 +22,6 @@ a.button > img {
 }
 #social {
     padding: 2em 0;
-    border-top: 5px solid #93E9BE;
-    animation: color-border 10s infinite;
 }
 #contents {
     border-radius: 25px;
@@ -32,6 +30,7 @@ a.button > img {
     box-shadow: 5px 5px 25px black;
 }
 .card {
+    border-radius: 25px;
 	background: rgba(255, 255, 255, .7);
 	-webkit-backgroup-filter: blur(10px);
 	backgrop-filter: blur(10px);
