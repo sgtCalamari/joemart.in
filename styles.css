@@ -40,6 +40,12 @@ a.button > img {
 #fetchButton:hover::after {
     animation: none;
 }
+#fetchButton:focus {
+    animation: button-color-animation 0.75s ease 0s 1 normal;
+}
+#fetchButton:focus::after {
+    animation: none;
+}
 #social {
     padding: 2em 0;
 }
