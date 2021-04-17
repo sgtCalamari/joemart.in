@@ -46,7 +46,7 @@ function AnimateFetchButton() {
     var btn = document.getElementById('fetchButton');
     var initBgColor = btn.style.backgroundColor;
     clearInterval(id);
-    id = setInterval(frame, 0.5);
+    id = setInterval(frame, 1);
     var i = 0;
     function frame() {
         if (i == 360) {
