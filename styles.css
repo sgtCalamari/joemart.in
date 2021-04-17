@@ -21,7 +21,7 @@ a.button > img {
     padding: 0 1%;
 }
 #fetchButton {
-    width: 13%;
+    width: auto;
     height: 3rem;
     font-size: 2em;
     background-color: inherit;
