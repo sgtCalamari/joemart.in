@@ -19,8 +19,14 @@ function GetBreedTextFromURL() {
     if (breed.includes('-')) {
         let breedParts = breed.split('-');
         breedParts = breedParts.reverse();
-        if (breedParts[0] === 'shepherd') {
-            breedParts = breedParts.reverse();
+        let testPart = breedParts[0];
+        switch (testPart) {
+            case 'shepherd':
+                breedParts = breedParts.reverse();
+                break;
+            case 'lapphund':
+                breedParts = breedParts.reverse();
+                break;
         }
         breed = breedParts.join(' ');
     }
