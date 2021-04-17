@@ -30,9 +30,8 @@
     <div class="card">
       <div>
         <h1 class="color">Welcome! Here's a dog.</h1>
-        <p>
-          <img id="dog" src="" alt="Woof woof" width="90%" onclick="Woof();">
-        </p>
+        <p><img id="dog" src="" alt="Woof woof" width="90%" onclick="Woof();"></p>
+        <h2 id='dogCaption' class='color'></h2>
         <button id="fetchButton" onclick="Woof()">FETCH!</button>
       </div>
       <div id="social">
@@ -59,20 +58,7 @@
   </div>
   <p id="helloWorld">Hello, World!</p>
 
-  <script type="text/javascript">
-    function Woof() {
-      fetch("https://dog.ceo/api/breeds/image/random", { method: 'get' })
-        .then(function (response) {
-          response.json().then(function (resJson) {
-            document.getElementById('dog').src = resJson.message;
-          });
-        }).catch(function (error) {
-          // Error :(
-          console.log(error);
-        });
-    }
-    Woof();
-  </script>
+  <script src='./dog.js'></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161551757-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
