@@ -31,7 +31,7 @@
       <div>
         <h1 class="color">Welcome! Here's a dog.</h1>
         <p>
-          <img id="dog" src="" alt="Woof woof" width="90%" onclick="FetchDog();">
+          <img id="dog" src="" alt="Woof woof" width="90%" onclick="Woof();">
         </p>
         <button id="fetchButton" onclick="Woof()">FETCH!</button>
       </div>
@@ -61,14 +61,6 @@
 
   <script type="text/javascript">
     function Woof() {
-      FetchDog();
-      
-      var element = document.getElementById('fetchButton');
-      element.classList.remove('buttonColorAnimation');
-      void element.offsetWidth;
-      element.classList.add('buttonColorAnimation');
-    };
-    function FetchDog() {
       fetch("https://dog.ceo/api/breeds/image/random", { method: 'get' })
         .then(function (response) {
           response.json().then(function (resJson) {
@@ -79,7 +71,7 @@
           console.log(error);
         });
     }
-    FetchDog();
+    Woof();
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161551757-1"></script>
   <script>

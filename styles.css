@@ -31,11 +31,7 @@ a.button > img {
     box-shadow: 5px 5px 25px gray;
 }
 #fetchButton:hover {
-    animation: button-color-animation .5s normal;
-}
-.buttonColorAnimation {
-    animation: button-color-animation .5s normal;
-    -webkit-animation: button-color-animation .5s normal;
+    animation: button-color-animation .75s normal;
 }
 #social {
     padding: 2em 0;
