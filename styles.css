@@ -41,7 +41,7 @@ a.button > img {
     animation: none;
 }
 #fetchButton:focus {
-    animation: button-color-animation 0.75s ease 0s 1 normal;
+    animation: button-color-animation 0.75s step-end 0s 1 normal;
 }
 #fetchButton:focus::after {
     animation: none;
