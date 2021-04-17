@@ -26,7 +26,6 @@ a.button > img {
     font-size: 2em;
     background-color: inherit;
     font-family: Chango, Helvetica, sans-serif;
-    animation: color-animation 10s infinite;
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 25px gray;
