@@ -18,10 +18,14 @@ function GetBreedTextFromURL() {
     let breed = urlParts[urlParts.indexOf('breeds')+1];
     if (breed.includes('-')) {
         let breedParts = breed.split('-');
-        breedParts.forEach(bp => bp[0].toUpperCase());
-        breed = breedParts.reverse().join(' ');
+        breedParts = breedParts.reverse();
+        if (breedParts[0] === 'shepherd') {
+            breedParts = breedParts.reverse();
+        }
+        breed = breedParts.join(' ');
     }
     if (breed === 'germanshepherd') { breed = 'german shepherd'; }
+    if (breed === 'stbernard') { breed = 'st. bernard'; }
 
     return "It's a" + (['a','e','i','o','u'].includes(breed[0]) ? "n " : " ") + breed + "!";
 }
