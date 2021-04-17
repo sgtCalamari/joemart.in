@@ -33,13 +33,12 @@ a.button > img {
     border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 25px gray;
-    text-decoration: none;
-    color: black;
-    padding: .5rem;
-    cursor: pointer;
 }
 #fetchButton:hover {
-    animation: button-color-animation .75s normal;
+    animation: button-color-animation 0.75s ease 0s 1 normal;
+}
+#fetchButton:hover::after {
+    animation: none;
 }
 #social {
     padding: 2em 0;
