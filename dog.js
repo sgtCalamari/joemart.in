@@ -34,6 +34,7 @@ function GetBreedTextFromURL() {
     }
     if (breed === 'germanshepherd') { breed = 'german shepherd'; }
     if (breed === 'stbernard') { breed = 'st. bernard'; }
+    if (breed === 'mexicanhairless') { breed = 'mexican hairless'; }
 
     return "It's a" + (['a','e','i','o','u'].includes(breed[0]) ? "n " : " ") + breed + "!";
 }
