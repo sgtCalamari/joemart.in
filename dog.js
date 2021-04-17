@@ -7,6 +7,7 @@ function Woof() {
                 url = resJson.message;
                 document.getElementById('dog').src = url;
                 document.getElementById('dogCaption').innerText = GetBreedTextFromURL();
+                document.getElementById('dogCaption').focus();
             });
         }).catch(function (error) {
             // Error :(
