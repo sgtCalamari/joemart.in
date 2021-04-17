@@ -22,17 +22,18 @@ a.button > img {
 }
 #fetchButton {
     width: 13%;
-    height: 2rem;
+    height: 3rem;
+    font-size: 2em;
     background-color: inherit;
     font-family: Chango, Helvetica, sans-serif;
     animation: color-animation 10s infinite;
+    border: 1px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 25px gray;
-    animation: color-border 10s infinite;
 }
 #fetchButton:hover {
-    background-color: black;
-    animation: color-animation 10s infinite;
+    color: black;
+    animation: color-bg-animation 10s infinite;
 }
 #social {
     padding: 2em 0;
