@@ -34,8 +34,9 @@ a.button > img {
 #fetchButton:hover {
     animation: button-color-animation .5s normal;
 }
-#fetchButton:active {
+.buttonColorAnimation {
     animation: button-color-animation .5s normal;
+    -webkit-animation: button-color-animation .5s normal;
 }
 #social {
     padding: 2em 0;
@@ -48,7 +49,7 @@ a.button > img {
 }
 .card {
     border-radius: 25px;
-	background: rgba(255, 255, 255, .75);
+	background: rgba(255, 255, 255, 0.6);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
 }
@@ -71,14 +72,17 @@ a.button > img {
     animation: color-animation 10s infinite;
 }
 @keyframes button-color-animation {
-    0% {background-color: red;}
-    15% {background-color: orange;}
-    30% {background-color: yellow;}
-    45% {background-color: green;}
-    60% {background-color: blue;}
-    75% {background-color: indigo;}
-    90% {background-color: violet;}
-    100% {background-color: fuchsia;}
+    0%   {background-color: red;}
+    10%  {background-color: orangered;}
+    20%  {background-color: orange;}
+    30%  {background-color: yellow;}
+    40%  {background-color: yellowgreen;}
+    50%  {background-color: green;}
+    60%  {background-color: teal;}
+    70%  {background-color: blue;}
+    80%  {background-color: blueviolet;}
+    90%  {background-color: indigo;}
+    100% {background-color: purple;}
 }
 @keyframes color-bg-animation {
     0%    {background-color: hsl(0, 65%, 40%);}

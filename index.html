@@ -61,6 +61,14 @@
 
   <script type="text/javascript">
     function Woof() {
+      FetchDog();
+      
+      var element = document.getElementById('fetchButton');
+      element.classList.remove('buttonColorAnimation');
+      void element.offsetWidth;
+      element.classList.add('buttonColorAnimation');
+    };
+    function FetchDog() {
       fetch("https://dog.ceo/api/breeds/image/random", { method: 'get' })
         .then(function (response) {
           response.json().then(function (resJson) {
@@ -70,8 +78,8 @@
           // Error :(
           console.log(error);
         });
-    };
-    Woof();
+    }
+    FetchDog();
   </script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-161551757-1"></script>
   <script>
