@@ -34,6 +34,9 @@ a.button > img {
 #fetchButton:hover {
     animation: button-color-animation .5s normal;
 }
+#fetchButton:active {
+    animation: button-color-animation .5s normal;
+}
 #social {
     padding: 2em 0;
 }
