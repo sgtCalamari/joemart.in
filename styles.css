@@ -32,8 +32,7 @@ a.button > img {
     box-shadow: 5px 5px 25px gray;
 }
 #fetchButton:hover {
-    color: black;
-    animation: color-bg-animation 10s infinite;
+    animation: button-color-animation .5s normal;
 }
 #social {
     padding: 2em 0;
@@ -67,6 +66,16 @@ a.button > img {
 .color {
     color: #ffffff;
     animation: color-animation 10s infinite;
+}
+@keyframes button-color-animation {
+    0% {background-color: red;}
+    15% {background-color: orange;}
+    30% {background-color: yellow;}
+    45% {background-color: green;}
+    60% {background-color: blue;}
+    75% {background-color: indigo;}
+    90% {background-color: violet;}
+    100% {background-color: fuchsia;}
 }
 @keyframes color-bg-animation {
     0%    {background-color: hsl(0, 65%, 40%);}
