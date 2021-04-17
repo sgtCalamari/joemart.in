@@ -1,4 +1,5 @@
 var url = "";
+var id = null;
 
 function Woof() {
     fetch("https://dog.ceo/api/breeds/image/random", { method: 'get' })
@@ -35,5 +36,25 @@ function GetBreedTextFromURL() {
     if (breed === 'stbernard') { breed = 'st. bernard'; }
 
     return "It's a" + (['a','e','i','o','u'].includes(breed[0]) ? "n " : " ") + breed + "!";
+}
+function ClickFetchButton() {
+    Woof();
+    AnimateFetchButton();
+}
+function AnimateFetchButton() {
+    var btn = document.getElementById('fetchButton');
+    var initBgColor = btn.style.backgroundColor;
+    clearInterval(id);
+    id = setInterval(frame, 0.5);
+    var i = 0;
+    function frame() {
+        if (i == 360) {
+            btn.style.backgroundColor = initBgColor;
+            clearInterval(id);
+        } else {
+            i++;
+            btn.style.backgroundColor = `hsl(${i}, 65%, 40%)`;
+        }
+    }
 }
 Woof();
