@@ -39,7 +39,7 @@ a.button > img {
 }
 #contents {
     border-radius: 25px;
-    width: 90%;
+    height: 100%;
     margin-left: 5%;
     box-shadow: 5px 5px 25px black;
 }
