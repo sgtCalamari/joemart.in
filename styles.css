@@ -40,14 +40,14 @@ a.button > img {
 #contents {
     border-radius: 25px;
     width: 90%;
-    margin-left: 5%;
+    margin: auto;
     box-shadow: 5px 5px 25px black;
 }
 @media (min-width: 1400px) {
     #contents {
 	width: 60%;
+	margin: auto;
     	border-radius: 25px;
-    	margin-left: 5%;
     	box-shadow: 5px 5px 25px black;
     }
 }
