@@ -43,6 +43,14 @@ a.button > img {
     margin-left: 5%;
     box-shadow: 5px 5px 25px black;
 }
+@media (min-width: 1400px) {
+    #contents {
+	width: 60%;
+    	border-radius: 25px;
+    	margin-left: 5%;
+    	box-shadow: 5px 5px 25px black;
+    }
+}
 .card {
     border-radius: 25px;
 	background: rgba(255, 255, 255, 0.6);
