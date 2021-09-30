@@ -65,6 +65,22 @@ a.button > img {
 	font-family: 'DotGothic16', sans-serif;
     text-align: right; 
 }
+.list-group {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	padding-bottom: 15px;
+}
+.list-group-item {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	margin: 3px auto;
+	width: 50%;
+	border: solid gray 1px;
+	padding: 5px;
+	border-radius: 5px;
+}
 .color-bg {
     background-color: #ffffff;
     animation-name: color-bg-animation;
