@@ -37,25 +37,19 @@ a.button > img {
 #social {
     padding: 2em 0;
 }
-#contents {
-    border-radius: 25px;
-    width: 90%;
-    margin: auto;
-    box-shadow: 5px 5px 25px black;
-}
 @media (min-width: 1400px) {
     #contents {
-	width: 60%;
-	margin: auto;
-    	border-radius: 25px;
-    	box-shadow: 5px 5px 25px black;
+		width: 60%;
+		margin: auto;
     }
 }
 .card {
-    border-radius: 25px;
 	background: rgba(255, 255, 255, 0.6);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
+    border-radius: 25px;
+    margin: auto;
+    box-shadow: 5px 5px 25px black;
 }
 #dog {
     border-radius: 20px;
@@ -65,11 +59,15 @@ a.button > img {
 	font-family: 'DotGothic16', sans-serif;
     text-align: right; 
 }
+#projects {
+	padding: 5px 0 10px 0;
+	margin: 25px auto;
+}
+
 .list-group {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	padding-bottom: 15px;
 }
 .list-group-item {
 	text-decoration: none;
