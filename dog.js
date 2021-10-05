@@ -47,7 +47,7 @@ function ClickFetchButton() {
     if (rand > 0.95) {
       confetti({
         particleCount: 3000*x,
-        spread: -360,
+        spread: 90,
         startVelocity: 150,
         origin: {x, y}
       });
