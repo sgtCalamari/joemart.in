@@ -41,6 +41,18 @@ function GetBreedTextFromURL() {
 function ClickFetchButton() {
     Woof();
     AnimateFetchButton();
+    const rand = Math.random();
+    if (rand > 0.8) {
+      confetti({
+        particleCount: 5000*rand,
+        spread: -360,
+        startVelocity: 150,
+        origin: {
+          x: rand,
+          y: rand-0.2
+        }
+      });
+    }
 }
 function AnimateFetchButton() {
     var btn = document.getElementById('fetchButton');
