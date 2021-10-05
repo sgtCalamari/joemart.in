@@ -48,7 +48,7 @@ function ClickFetchButton() {
       confetti({
         particleCount: 3000*x,
         spread: 90,
-        startVelocity: 150,
+        startVelocity: 100,
         origin: {x, y}
       });
     }
