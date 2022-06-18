@@ -24,16 +24,6 @@ a.button > img {
     width: 13%;
     padding: 0 1%;
 }
-#fetchButton {
-    width: 80%;
-    height: 4rem;
-    font-size: 2em;
-    background-color: inherit;
-    font-family: Chango, Helvetica, sans-serif;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 5px 5px 25px gray;
-}
 #social {
     padding: 2em 0;
 }
@@ -57,7 +47,7 @@ a.button > img {
 #helloWorld {
     animation: color-animation 10s infinite;
 	font-family: 'DotGothic16', sans-serif;
-    text-align: right; 
+    text-align: right;
 }
 #projects {
 	padding-bottom: 10px;
@@ -104,37 +94,37 @@ a.button > img {
 @keyframes color-bg-animation {
     0%    {background-color: hsl(0, 65%, 40%);}
     2%    {background-color: hsl(9, 65%, 40%);}
-    5%    {background-color: hsl(18, 65%, 40%);} 
-    7%    {background-color: hsl(27, 65%, 40%);} 
-    10%   {background-color: hsl(36, 65%, 40%);} 
-    12%   {background-color: hsl(45, 65%, 40%);} 
-    15%   {background-color: hsl(54, 65%, 40%);} 
-    17%   {background-color: hsl(63, 65%, 40%);} 
-    20%   {background-color: hsl(72, 65%, 40%);} 
-    22%   {background-color: hsl(81, 65%, 40%);} 
-    25%   {background-color: hsl(90, 65%, 40%);} 
-    27%   {background-color: hsl(99, 65%, 40%);} 
+    5%    {background-color: hsl(18, 65%, 40%);}
+    7%    {background-color: hsl(27, 65%, 40%);}
+    10%   {background-color: hsl(36, 65%, 40%);}
+    12%   {background-color: hsl(45, 65%, 40%);}
+    15%   {background-color: hsl(54, 65%, 40%);}
+    17%   {background-color: hsl(63, 65%, 40%);}
+    20%   {background-color: hsl(72, 65%, 40%);}
+    22%   {background-color: hsl(81, 65%, 40%);}
+    25%   {background-color: hsl(90, 65%, 40%);}
+    27%   {background-color: hsl(99, 65%, 40%);}
     30%   {background-color: hsl(108, 65%, 40%);}
-    32%   {background-color: hsl(117, 65%, 40%);} 
-    35%   {background-color: hsl(126, 65%, 40%);} 
-    37%   {background-color: hsl(135, 65%, 40%);} 
-    40%   {background-color: hsl(144, 65%, 40%);} 
-    42%   {background-color: hsl(153, 65%, 40%);} 
-    45%   {background-color: hsl(162, 65%, 40%);} 
-    47%   {background-color: hsl(171, 65%, 40%);} 
-    50%   {background-color: hsl(180, 65%, 40%);} 
-    52%   {background-color: hsl(189, 65%, 40%);} 
-    55%   {background-color: hsl(198, 65%, 40%);} 
-    57%   {background-color: hsl(207, 65%, 40%);} 
-    60%   {background-color: hsl(216, 65%, 40%);} 
-    62%   {background-color: hsl(225, 65%, 40%);} 
-    65%   {background-color: hsl(234, 65%, 40%);} 
-    67%   {background-color: hsl(243, 65%, 40%);} 
-    70%   {background-color: hsl(252, 65%, 40%);} 
-    72%   {background-color: hsl(261, 65%, 40%);} 
-    75%   {background-color: hsl(270, 65%, 40%);} 
-    77%   {background-color: hsl(279, 65%, 40%);} 
-    80%   {background-color: hsl(288, 65%, 40%);} 
+    32%   {background-color: hsl(117, 65%, 40%);}
+    35%   {background-color: hsl(126, 65%, 40%);}
+    37%   {background-color: hsl(135, 65%, 40%);}
+    40%   {background-color: hsl(144, 65%, 40%);}
+    42%   {background-color: hsl(153, 65%, 40%);}
+    45%   {background-color: hsl(162, 65%, 40%);}
+    47%   {background-color: hsl(171, 65%, 40%);}
+    50%   {background-color: hsl(180, 65%, 40%);}
+    52%   {background-color: hsl(189, 65%, 40%);}
+    55%   {background-color: hsl(198, 65%, 40%);}
+    57%   {background-color: hsl(207, 65%, 40%);}
+    60%   {background-color: hsl(216, 65%, 40%);}
+    62%   {background-color: hsl(225, 65%, 40%);}
+    65%   {background-color: hsl(234, 65%, 40%);}
+    67%   {background-color: hsl(243, 65%, 40%);}
+    70%   {background-color: hsl(252, 65%, 40%);}
+    72%   {background-color: hsl(261, 65%, 40%);}
+    75%   {background-color: hsl(270, 65%, 40%);}
+    77%   {background-color: hsl(279, 65%, 40%);}
+    80%   {background-color: hsl(288, 65%, 40%);}
     82%   {background-color: hsl(297, 65%, 40%);}
     85%   {background-color: hsl(306, 65%, 40%);}
     87%   {background-color: hsl(315, 65%, 40%);}
@@ -147,37 +137,37 @@ a.button > img {
 @keyframes color-animation {
     0%    {color: hsl(0, 65%, 40%);}
     2%    {color: hsl(9, 65%, 40%);}
-    5%    {color: hsl(18, 65%, 40%);} 
-    7%    {color: hsl(27, 65%, 40%);} 
-    10%   {color: hsl(36, 65%, 40%);} 
-    12%   {color: hsl(45, 65%, 40%);} 
-    15%   {color: hsl(54, 65%, 40%);} 
-    17%   {color: hsl(63, 65%, 40%);} 
-    20%   {color: hsl(72, 65%, 40%);} 
-    22%   {color: hsl(81, 65%, 40%);} 
-    25%   {color: hsl(90, 65%, 40%);} 
-    27%   {color: hsl(99, 65%, 40%);} 
+    5%    {color: hsl(18, 65%, 40%);}
+    7%    {color: hsl(27, 65%, 40%);}
+    10%   {color: hsl(36, 65%, 40%);}
+    12%   {color: hsl(45, 65%, 40%);}
+    15%   {color: hsl(54, 65%, 40%);}
+    17%   {color: hsl(63, 65%, 40%);}
+    20%   {color: hsl(72, 65%, 40%);}
+    22%   {color: hsl(81, 65%, 40%);}
+    25%   {color: hsl(90, 65%, 40%);}
+    27%   {color: hsl(99, 65%, 40%);}
     30%   {color: hsl(108, 65%, 40%);}
-    32%   {color: hsl(117, 65%, 40%);} 
-    35%   {color: hsl(126, 65%, 40%);} 
-    37%   {color: hsl(135, 65%, 40%);} 
-    40%   {color: hsl(144, 65%, 40%);} 
-    42%   {color: hsl(153, 65%, 40%);} 
-    45%   {color: hsl(162, 65%, 40%);} 
-    47%   {color: hsl(171, 65%, 40%);} 
-    50%   {color: hsl(180, 65%, 40%);} 
-    52%   {color: hsl(189, 65%, 40%);} 
-    55%   {color: hsl(198, 65%, 40%);} 
-    57%   {color: hsl(207, 65%, 40%);} 
-    60%   {color: hsl(216, 65%, 40%);} 
-    62%   {color: hsl(225, 65%, 40%);} 
-    65%   {color: hsl(234, 65%, 40%);} 
-    67%   {color: hsl(243, 65%, 40%);} 
-    70%   {color: hsl(252, 65%, 40%);} 
-    72%   {color: hsl(261, 65%, 40%);} 
-    75%   {color: hsl(270, 65%, 40%);} 
-    77%   {color: hsl(279, 65%, 40%);} 
-    80%   {color: hsl(288, 65%, 40%);} 
+    32%   {color: hsl(117, 65%, 40%);}
+    35%   {color: hsl(126, 65%, 40%);}
+    37%   {color: hsl(135, 65%, 40%);}
+    40%   {color: hsl(144, 65%, 40%);}
+    42%   {color: hsl(153, 65%, 40%);}
+    45%   {color: hsl(162, 65%, 40%);}
+    47%   {color: hsl(171, 65%, 40%);}
+    50%   {color: hsl(180, 65%, 40%);}
+    52%   {color: hsl(189, 65%, 40%);}
+    55%   {color: hsl(198, 65%, 40%);}
+    57%   {color: hsl(207, 65%, 40%);}
+    60%   {color: hsl(216, 65%, 40%);}
+    62%   {color: hsl(225, 65%, 40%);}
+    65%   {color: hsl(234, 65%, 40%);}
+    67%   {color: hsl(243, 65%, 40%);}
+    70%   {color: hsl(252, 65%, 40%);}
+    72%   {color: hsl(261, 65%, 40%);}
+    75%   {color: hsl(270, 65%, 40%);}
+    77%   {color: hsl(279, 65%, 40%);}
+    80%   {color: hsl(288, 65%, 40%);}
     82%   {color: hsl(297, 65%, 40%);}
     85%   {color: hsl(306, 65%, 40%);}
     87%   {color: hsl(315, 65%, 40%);}
@@ -190,37 +180,37 @@ a.button > img {
 @keyframes color-border {
     0%    {border-color: hsl(0, 65%, 40%);}
     2%    {border-color: hsl(9, 65%, 40%);}
-    5%    {border-color: hsl(18, 65%, 40%);} 
-    7%    {border-color: hsl(27, 65%, 40%);} 
-    10%   {border-color: hsl(36, 65%, 40%);} 
-    12%   {border-color: hsl(45, 65%, 40%);} 
-    15%   {border-color: hsl(54, 65%, 40%);} 
-    17%   {border-color: hsl(63, 65%, 40%);} 
-    20%   {border-color: hsl(72, 65%, 40%);} 
-    22%   {border-color: hsl(81, 65%, 40%);} 
-    25%   {border-color: hsl(90, 65%, 40%);} 
-    27%   {border-color: hsl(99, 65%, 40%);} 
+    5%    {border-color: hsl(18, 65%, 40%);}
+    7%    {border-color: hsl(27, 65%, 40%);}
+    10%   {border-color: hsl(36, 65%, 40%);}
+    12%   {border-color: hsl(45, 65%, 40%);}
+    15%   {border-color: hsl(54, 65%, 40%);}
+    17%   {border-color: hsl(63, 65%, 40%);}
+    20%   {border-color: hsl(72, 65%, 40%);}
+    22%   {border-color: hsl(81, 65%, 40%);}
+    25%   {border-color: hsl(90, 65%, 40%);}
+    27%   {border-color: hsl(99, 65%, 40%);}
     30%   {border-color: hsl(108, 65%, 40%);}
-    32%   {border-color: hsl(117, 65%, 40%);} 
-    35%   {border-color: hsl(126, 65%, 40%);} 
-    37%   {border-color: hsl(135, 65%, 40%);} 
-    40%   {border-color: hsl(144, 65%, 40%);} 
-    42%   {border-color: hsl(153, 65%, 40%);} 
-    45%   {border-color: hsl(162, 65%, 40%);} 
-    47%   {border-color: hsl(171, 65%, 40%);} 
-    50%   {border-color: hsl(180, 65%, 40%);} 
-    52%   {border-color: hsl(189, 65%, 40%);} 
-    55%   {border-color: hsl(198, 65%, 40%);} 
-    57%   {border-color: hsl(207, 65%, 40%);} 
-    60%   {border-color: hsl(216, 65%, 40%);} 
-    62%   {border-color: hsl(225, 65%, 40%);} 
-    65%   {border-color: hsl(234, 65%, 40%);} 
-    67%   {border-color: hsl(243, 65%, 40%);} 
-    70%   {border-color: hsl(252, 65%, 40%);} 
-    72%   {border-color: hsl(261, 65%, 40%);} 
-    75%   {border-color: hsl(270, 65%, 40%);} 
-    77%   {border-color: hsl(279, 65%, 40%);} 
-    80%   {border-color: hsl(288, 65%, 40%);} 
+    32%   {border-color: hsl(117, 65%, 40%);}
+    35%   {border-color: hsl(126, 65%, 40%);}
+    37%   {border-color: hsl(135, 65%, 40%);}
+    40%   {border-color: hsl(144, 65%, 40%);}
+    42%   {border-color: hsl(153, 65%, 40%);}
+    45%   {border-color: hsl(162, 65%, 40%);}
+    47%   {border-color: hsl(171, 65%, 40%);}
+    50%   {border-color: hsl(180, 65%, 40%);}
+    52%   {border-color: hsl(189, 65%, 40%);}
+    55%   {border-color: hsl(198, 65%, 40%);}
+    57%   {border-color: hsl(207, 65%, 40%);}
+    60%   {border-color: hsl(216, 65%, 40%);}
+    62%   {border-color: hsl(225, 65%, 40%);}
+    65%   {border-color: hsl(234, 65%, 40%);}
+    67%   {border-color: hsl(243, 65%, 40%);}
+    70%   {border-color: hsl(252, 65%, 40%);}
+    72%   {border-color: hsl(261, 65%, 40%);}
+    75%   {border-color: hsl(270, 65%, 40%);}
+    77%   {border-color: hsl(279, 65%, 40%);}
+    80%   {border-color: hsl(288, 65%, 40%);}
     82%   {border-color: hsl(297, 65%, 40%);}
     85%   {border-color: hsl(306, 65%, 40%);}
     87%   {border-color: hsl(315, 65%, 40%);}
