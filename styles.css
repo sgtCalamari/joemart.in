@@ -3,7 +3,9 @@
     src: url('./TheSkinny.otf') format('opentype');
 }
 body {
-    background-image: url(./PXL_20230806_170246423.MP-EDIT.jpg)
+    background-image: url(./PXL_20230806_170246423.MP-EDIT.jpg);
+    background-repeat: no-repeat;
+    background-color: #001f00;
 }
 h1, h2 {
     padding: 1em 0em 0em 0em;
